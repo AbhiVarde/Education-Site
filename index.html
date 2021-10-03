@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Code With Abhi</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#courses">COURSES</a></li>
+                    <li><a href="#tutorials">TUTORIALS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>What would you like to learn?</h1>
+            <p>You only have to know one thing: You can learn anything.</p>
+            <a href="#courses" class="hero-btn">Browse free online courses</a>
+        </div>
+    </section>
+    <!------ course ------>
+    <section class="course" id="courses">
+        <h1>Courses For You</h1>
+        <P>For free.For everyone.Forever</P>
+        <div class="row">
+            <div class="course-col">
+                <img src="image/js.jpg" >
+                <h3>The Ultimate JavaScript Mastery</h3>
+                <P>Master the Fundamentals of JavaScript - The Language Behind Millions of Websites & Apps.</P>
+                <a href="#" class="course-btn"> Let's Start</a>
+            </div>
+            <div class="course-col">
+                <img src="image/python.jpg">
+                <h3>Complete Python Mastery</h3>
+                <P>Everything You Need to Program in Python in One Course(Includes 3 Real-world Projects).</P>
+                <a href="#" class="course-btn">Let's Start</a>
+            </div>
+            <div class="course-col">
+                <img src="image/react.jpg">
+                <h3>Mastering React</h3>
+                <P>Understand React inside out and boost your career prospects</P>
+                <a href="#" class="course-btn">Let's Start</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="course-col">
+                <img src="image/sql.jpg" >
+                <h3>Complete SQL Mastery</h3>
+                <P>Everything You Need to Design and Query Databases in One Course</P>
+                <a href="#" class="course-btn">Let's Start</a>
+            </div>
+            <div class="course-col">
+                <img src="image/html.jpg">
+                <h3>The Ultimate HTML5 Mastery Series</h3>
+                <P>Everything you need to build fast and beautiful websites with HTML5  in one bundle.</P>
+                <a href="#" class="course-btn">Let's Start</a>
+            </div>
+            
+            <div class="course-col">
+                <img src="image/Java.jpg">
+                <h3>The Ultimate Java Mastery Series </h3>
+                <P>From Java zero to hero - Master the world's most popular coding language.</P>
+                <a href="#" class="course-btn">Let's Start</a>
+            </div>
+        </div>
+    </section>
+    <!--about-->
+    <section class="about" id="about">
+        <h4> About </h4>
+        <p class="center-align">
+            Hi! I am Abhi Varde! I am a passionate and pragmatic software engineer <br> and I would like to explain people how to code or how to become professional <br>software engineers through my courses. I have a Bachelor of Science in Software <br>Engineering.
+        </p>
+        <p class="center-align">
+         My mission is to make coding and software engineering accessible to everyone<br> through courses that
+         are simple to digest, and practical to implement.
+        </p>
+    </section>
+
+    <!------ contact ------>
+    <section class="contact" id="contact">
+        <h4>Contact</h4>
+        <p>Mobile : 9199**25*6</p>
+        <p>eMail : CWAinfo@gmail.com</p>
+        <div class="icons">
+            <a href="#" class="fas fa-facebook"></a>
+            <a href="#" class="fas fa-twitter"></a>
+            <a href="#" class="fas fa-instagram"></a>
+        </div>
+        <p><br>Made by &#9825 from CWA .</p>
+        <p><br>&#169 Code With Abhi 2021.<br></p>
+    </section>
+
+    <script>
+        const links = document.querySelectorAll(".page-header ul a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+} 
+    </script>
+
+</body>
+</html>
